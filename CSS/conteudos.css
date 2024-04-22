@@ -41,7 +41,8 @@
     text-align: center;
 }
 .info-principal-conteudo-template h4 {
-    font-size: 1.25rem;
+    font-size: 1rem;
+    text-align: center;
 
     color: black;
     text-decoration: none;
