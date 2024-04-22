@@ -1,0 +1,147 @@
+* {
+    gap: 0;
+    margin: 0;
+    font-family: poppins;
+
+    user-select: none;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+
+    overflow: hidden;
+}
+html {
+    overflow: hidden;
+}
+
+header {
+    background-color: #8FAEDD;
+    height: 12%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.tituloHeader {
+    margin-left: 10px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 10%;
+    height: 100%;
+}
+
+.textoTituloHeader {
+    font-size: 30px;
+    color: #fff;
+}
+
+.opcoesHeader{
+    width: 30%;
+    height: 100%;
+
+    padding: 22px;
+    margin-top: 5px;
+}
+
+.opcoes__estruturaUl{
+    list-style:none;
+    display: flex;
+    flex-direction: row;
+
+    justify-content: space-between;
+
+    color: #fff;
+    font-size: 15px;
+}
+
+main{
+    height: 88%;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.parteSuperior{
+    height: 25%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.tituloCorpoCentral{
+    padding: 4px;
+    height: 70%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    align-items: center;
+}
+
+.tituloComCor{
+    color: #8FAEDD;
+    margin-bottom: 2px;
+}
+
+.barraDePesquisa{
+    width: 20%;
+    height: 100px;
+    background-color: #c6c6c6;
+    
+    border-radius: 15px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.corpo{
+    height: 100%;
+    width: 100%;
+
+    padding: 10px;
+
+}
+
+.opcoes__estruturaUlCorpo{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.conteudos{
+    height: 50px;
+    width: 93vw;
+
+    padding: 4px;
+
+    background-color: #DFE9F5;
+    display: flex;
+    justify-content: space-between;
+
+    align-items: center;
+
+    border-radius: 20px;
+    
+    margin: 6px;
+}
+
+.videos{
+    display: flex;
+}
+
+.tituloConteudo{
+    text-decoration:underline;
+}
