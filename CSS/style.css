@@ -1,0 +1,167 @@
+@import url(conteudos.css);
+@import url(poemas.css);
+
+* {
+    user-select: none;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    width: 100%;
+    height: 15vh;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    background-color: #8FAEDD;
+
+    font-family: "Poppins", sans-serif;
+}
+
+header h2 {
+    font-size: 2rem;
+
+    color: white;
+}
+
+header div {
+    width: 30%;
+    height: 35%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+}
+header div label {
+    width: 10%;
+    height: 80%;
+
+    position: absolute;
+    top: 10%;
+    left: 0px;
+}
+header div label img {
+    width: 100%;
+    height: 100%;
+
+    color: #8FAEDD;
+}
+
+header input {
+    width: 100%;
+    height: 100%;
+
+    padding-left: 48px;
+    padding-right: 16px;
+
+    font-family: "Poppins", sans-serif;
+    font-size: 1.5rem;
+
+    border: transparent;
+    border-radius: 20px;
+}
+
+header ul {
+    width: 33%;
+
+    display: flex;
+    justify-content: space-around;
+
+    list-style: none;
+    text-decoration: none;
+}
+header ul li {
+    font-size: 1.3rem;
+
+    color: white;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.boas-vindas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 72px;
+
+    font-family: "Poppins", sans-serif;
+}
+
+.boas-vindas h3 {
+    font-size: 3rem;
+}
+.boas-vindas h4 {
+    font-size: 2.25rem;
+
+    margin-top: 4px;
+}
+.boas-vindas h2 {
+    font-size: 3.25rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+
+    margin-top: 16px;
+
+    color: #8FAEDD;
+}
+
+.introducao {
+    font-family: "Poppins", sans-serif;
+    font-size: 2.5rem;
+    text-align: center;
+
+    margin-top: 48px;
+    width: 50%;
+
+    color: #293F8A;
+}
+
+.sections-conteudo {
+    font-family: "Poppins", sans-serif;
+
+    margin-top: 56px;
+}
+
+.sections-conteudo h2 {
+    font-size: 1.7rem;
+    font-weight: bold;
+
+    margin: 8px 8px;
+}
+.sections-conteudo h2 span {
+    color: #8FAEDD;
+}
+
+.section-ultimos-poemas {
+    width: 100%;
+    height: 30vh;
+    padding: 8px;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    background-color: #DFE9F5;
+}
+
+.section-ultimos-poemas a {
+    width: 25rem;
+    height: 85%;
+}
+
