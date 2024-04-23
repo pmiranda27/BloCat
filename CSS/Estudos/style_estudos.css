@@ -1,147 +1,217 @@
 * {
-    gap: 0;
-    margin: 0;
-    font-family: poppins;
-
     user-select: none;
 }
 
-body {
-    height: 100vh;
-    width: 100%;
-
-    overflow: hidden;
+html, body {
+    overflow-x: hidden;
 }
-html {
-    overflow: hidden;
+
+a {
+    text-decoration: none;
 }
 
 header {
+    width: 100%;
+    height: 15vh;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
     background-color: #8FAEDD;
-    height: 12%;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
+
+    font-family: "Poppins", sans-serif;
 }
 
-.tituloHeader {
-    margin-left: 10px;
+header h2 {
+    font-size: 2rem;
 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 10%;
-    height: 100%;
+    color: white;
 }
 
-.textoTituloHeader {
-    font-size: 30px;
-    color: #fff;
-}
-
-.opcoesHeader{
+header div {
     width: 30%;
-    height: 100%;
-
-    padding: 22px;
-    margin-top: 5px;
-}
-
-.opcoes__estruturaUl{
-    list-style:none;
-    display: flex;
-    flex-direction: row;
-
-    justify-content: space-between;
-
-    color: #fff;
-    font-size: 15px;
-}
-
-main{
-    height: 88%;
-    width: 100%;
+    height: 35%;
 
     display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.parteSuperior{
-    height: 25%;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.tituloCorpoCentral{
-    padding: 4px;
-    height: 70%;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content:space-around;
-    align-items: center;
-}
-
-.tituloComCor{
-    color: #8FAEDD;
-    margin-bottom: 2px;
-}
-
-.barraDePesquisa{
-    width: 20%;
-    height: 100px;
-    background-color: #c6c6c6;
-    
-    border-radius: 15px;
-
-    display: flex;
-    flex-direction: row;
     justify-content: center;
     align-items: center;
 
+    position: relative;
 }
+header div label {
+    width: 10%;
+    height: 80%;
 
-.corpo{
-    height: 100%;
+    position: absolute;
+    top: 10%;
+    left: 0px;
+}
+header div label img {
     width: 100%;
+    height: 100%;
 
-    padding: 10px;
-
+    color: #8FAEDD;
 }
 
-.opcoes__estruturaUlCorpo{
+header input {
+    width: 100%;
+    height: 100%;
+
+    padding-left: 48px;
+    padding-right: 16px;
+
+    font-family: "Poppins", sans-serif;
+    font-size: 1.5rem;
+
+    border: transparent;
+    border-radius: 20px;
+}
+
+header ul {
+    width: 33%;
+
+    display: flex;
+    justify-content: space-around;
+
     list-style: none;
+    text-decoration: none;
+}
+header ul li {
+    font-size: 1.3rem;
+
+    color: white;
+}
+
+main {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     align-items: center;
 }
 
-.conteudos{
-    height: 50px;
-    width: 93vw;
-
-    padding: 4px;
-
-    background-color: #DFE9F5;
+.boas-vindas {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 
+    margin-top: 48px;
+    padding: 8px;
+
+    font-family: "Poppins", sans-serif;
+}
+
+.boas-vindas h3 {
+    font-size: 2.5rem;
+}
+.boas-vindas h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+
+    margin-top: 8px;
+
+    color: #8FAEDD;
+}
+
+.pesquisar_conteudo {
+    width: 30%;
+    height: 35%;
+
+    display: flex;
+    justify-content: center;
     align-items: center;
 
+    margin-top: 16px;
+
+    position: relative;
+}
+.pesquisar_conteudo label {
+    width: 10%;
+    height: 80%;
+
+    position: absolute;
+    top: 10%;
+    left: 8px;
+}
+.pesquisar_conteudo label img {
+    width: 100%;
+    height: 100%;
+
+    color: #8FAEDD;
+}
+
+.pesquisar_conteudo-input {
+    width: 100%;
+    height: 6vh;
+
+    padding-left: 64px;
+    padding-right: 16px;
+
+    background-color: #E4E4E4;
+
+    font-family: "Poppins", sans-serif;
+    font-size: 1.5rem;
+
+    color: #0A599B;
+
+    border: 1px solid black;
     border-radius: 20px;
-    
-    margin: 6px;
+}
+.pesquisar_conteudo-input::placeholder {
+    color: rgba(10, 89, 155, 0.5);
 }
 
-.videos{
+.conteudos-estudos {
+    width: 90%;
+
+    margin-top: 40px;
+    padding: 8px;
+
     display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    font-family: "Poppins", sans-serif;
 }
 
-.tituloConteudo{
-    text-decoration:underline;
+.dropdown-conteudo {
+    background-color: #DFE9F5;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+    height: 7vh;
+
+    padding: 8px;
+    margin-bottom: 16px;
+
+    border-radius: 30px;
+}
+
+.dropdown-conteudo h2 {
+    font-size: 1.5rem;
+
+    font-weight: 500;
+}
+
+.toplay {
+    width: 10vw;
+    height: 50%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 4px;
+
+    margin-right: 16px;
+
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+
+.toplay img {
+    height: 100%;
 }
