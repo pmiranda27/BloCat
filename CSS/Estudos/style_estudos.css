@@ -33,9 +33,7 @@ header div {
     width: 30%;
     height: 35%;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    visibility: none;
 
     position: relative;
 }
@@ -43,16 +41,13 @@ header div label {
     width: 10%;
     height: 80%;
 
+    visibility: none;
+
     position: absolute;
     top: 10%;
     left: 0px;
 }
-header div label img {
-    width: 100%;
-    height: 100%;
 
-    color: #8FAEDD;
-}
 
 header input {
     width: 100%;
@@ -60,6 +55,8 @@ header input {
 
     padding-left: 48px;
     padding-right: 16px;
+
+    display: none;
 
     font-family: "Poppins", sans-serif;
     font-size: 1.5rem;
