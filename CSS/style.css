@@ -5,7 +5,8 @@
     user-select: none;
 }
 
-html, body {
+html,
+body {
     overflow-x: hidden;
 }
 
@@ -26,10 +27,45 @@ header {
     font-family: "Poppins", sans-serif;
 }
 
+@media only screen and (max-width: 360px) {
+    header {
+        flex-direction: column;
+
+        gap: 12px;
+        
+        height: 25vh;
+
+        padding: 8px 0;
+    }
+}
+
 header h2 {
     font-size: 2rem;
 
+    text-align: center;
+
     color: white;
+}
+
+@media only screen and (max-width: 936px) {
+    header h2 {
+        font-size: 1.5rem;
+    }
+}
+@media only screen and (max-width: 612px) {
+    header h2 {
+        width: 30%;
+
+        display: flex;
+        justify-content: center;
+
+        font-size: 2.25rem;
+    }
+}
+@media only screen and (max-width: 52px){
+    header h2 {
+        font-size: 2.15rem;
+    }
 }
 
 header div {
@@ -42,6 +78,14 @@ header div {
 
     position: relative;
 }
+
+@media only screen and (max-width: 360px) {
+    header div {
+        width: 90%;
+        height: 25%;
+    }
+}
+
 header div label {
     width: 10%;
     height: 80%;
@@ -50,6 +94,14 @@ header div label {
     top: 10%;
     left: 0px;
 }
+
+@media only screen and (max-width: 912px) {
+    header div label {
+        left: 4px;
+    }
+}
+
+
 header div label img {
     width: 100%;
     height: 100%;
@@ -71,6 +123,22 @@ header input {
     border-radius: 20px;
 }
 
+@media only screen and (max-width: 704px){
+    header input{
+        padding-left: 28px;
+
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    header input {
+        width: 85%;
+
+        padding-left: 32px;
+    }
+}
+
 header ul {
     width: 33%;
 
@@ -80,10 +148,48 @@ header ul {
     list-style: none;
     text-decoration: none;
 }
+
+@media only screen and (max-width: 704px) {
+    header ul {
+        width: 30%;
+
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        font-size: 2rem;
+
+        gap: 8px;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    header ul {
+        width: 100%;
+
+        flex-direction: row;
+
+        font-size: 1.75rem;
+    }
+}
+
 header ul li {
     font-size: 1.3rem;
 
+    text-align: center;
+
     color: white;
+}
+
+@media only screen and (max-width: 912px){
+    header ul li{
+        font-size: 1rem;
+    }
+}
+@media only screen and (max-width: 704px){
+    header ul li {
+        font-size: 1.25rem;
+    }
 }
 
 main {
@@ -101,16 +207,25 @@ main {
     margin-top: 72px;
 
     font-family: "Poppins", sans-serif;
+    text-align: center;
+}
+
+@media only screen and (max-width: 612px){
+    .boas-vindas {
+        width: 80%;
+    }
 }
 
 .boas-vindas h3 {
     font-size: 3rem;
 }
+
 .boas-vindas h4 {
     font-size: 2.25rem;
 
     margin-top: 4px;
 }
+
 .boas-vindas h2 {
     font-size: 3.25rem;
     font-weight: bold;
@@ -132,6 +247,12 @@ main {
     color: #293F8A;
 }
 
+@media only screen and (max-width: 612px){
+    .introducao {
+        width: 70%;
+    }
+}
+
 .sections-conteudo {
     font-family: "Poppins", sans-serif;
 
@@ -144,6 +265,7 @@ main {
 
     margin: 8px 8px;
 }
+
 .sections-conteudo h2 span {
     color: #8FAEDD;
 }
@@ -170,4 +292,3 @@ main {
     width: 25rem;
     height: 85%;
 }
-
